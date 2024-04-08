@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.banner{
+    padding: 2%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.splashContainer{
+    padding: 1%;
+    background-color: rebeccapurple;
+}
