@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" class="css">
     <title>Document</title>
 </head>
 <body>
     <!-- banner content -->
-    <!-- <div class="banner">
-        <h2>Sushil Thapa</h2>
-        <h2>2024/04/07</h2>
-        <h2>C0919991</h2>
-    </div> -->
+    <div class="banner">
+        <h2 id="name">Sushil Thapa</h2>
+        <h2 id="date">2024/04/07</h2>
+        <h2 id="cnum">C0919991</h2>
+    </div>
 
 
     <form>
+        <div class="imageContentUnsplash">
+            <img src="" alt="" id="imageUnsplash" />
+        </div>
         <input id="inputContent" placeholder="enter image name"/>
         <button id="button">Search</button>
     </form>
+
+    <div class="time">
+        <h1>Local Time:</h1>
+        <p id="localDateTime"></p>
+    </div>
+
 
 </body>
 <script src="script.js"></script>

@@ -7,6 +7,7 @@ body{
     background-image: url();
 }
 
+/* css for banner */
 .banner{
     padding: 2%;
     background-color: aqua;
@@ -14,11 +15,19 @@ body{
     justify-content: space-between;
 }
 
+#name{
+    padding: 2%;
+    background-color: red;
+    border-radius: 5%;
+    box-shadow: 2%;
+}
+
+
 img {
     position:static;
     top: 0;
     left: 0;
     width: 900px;
     height: 500px;
-    object-fit: cover; /* This will make the image cover the entire container while preserving aspect ratio */
+    object-fit: cover;
 }
