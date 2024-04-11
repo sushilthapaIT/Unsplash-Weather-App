@@ -1,33 +1,229 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
-    background-image: url();
+    background: linear-gradient(#ffffff, #020024);
 }
 
 /* css for banner */
-.banner{
-    padding: 2%;
-    background-color: aqua;
+/* Banner styles */
+.banner {
+    padding: 20px;
+    background-color: #36454F;
+    color: #fff;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
 
-#name{
-    padding: 2%;
-    background-color: red;
-    border-radius: 5%;
-    box-shadow: 2%;
+.banner h2 {
+    font-size: 18px;
+}
+
+/* Styles for each banner item */
+#name, #date, #cnum {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #6C7A89;
+}
+
+#name {
+    margin-right: 10px; /* Provide some spacing between items */
 }
 
 
-img {
+
+#imageUnsplash {
     position:static;
     top: 0;
     left: 0;
-    width: 900px;
-    height: 500px;
+    width: 500px;
+    height: 250px;
     object-fit: cover;
+    background-size: contain; /* Cover the entire container */
+    background-position: center;
 }
+
+
+
+.main-container{
+    width: fit-content;
+    background: #36454F;
+    color: #fff;
+    margin: 10px auto 0;
+    border-radius: 25px;
+    padding: 40px 60px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 470px;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    color: #555;
+    border-radius: 30px;
+    padding: 10px 25px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 90px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.search button img{
+    width: 20px;
+}
+
+.weather-icon{
+    width: 170px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather{
+    display: none;
+}
+
+/* CSS to display error message */
+.error{
+   text-align: center;
+   margin-left: 10px; 
+   font-size: 19px;
+   font-weight: bolder;
+   margin-top: 10px;
+   display: none;
+   color: rgb(241, 64, 64);
+}
+
+
+.temperature{
+    margin-top: 20px;
+}
+
+
+.head{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 4px;
+    background-color: hsla(172, 49%, 63%, 0.842);
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#icon{
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Each child will take up an equal fraction of the available space */
+    gap: 10px;
+}
+
+
+.item {
+    border: 1px solid black; /* Just for visualization */
+    padding: 10px; /* Add padding or adjust as needed */
+}
+
+.time {
+    border: 25px;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    color: #ebfffc;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/* inputfield unsplash */
+#inputContent {
+    width: 50%; /* Set the width to 100% to make it responsive */
+    padding: 5px; /* Add padding for better visual appeal */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    font-size: 16px; /* Set font size */
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
+  
+  /* Style placeholder text */
+  #inputContent::placeholder {
+    color: #999; /* Set placeholder color */
+  }
+  
+  /* Style on focus */
+  #inputContent:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #007bff; /* Change border color on focus */
+  }
+  
+  
