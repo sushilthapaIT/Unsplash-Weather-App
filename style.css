@@ -11,45 +11,69 @@ body{
 /* css for banner */
 /* Banner styles */
 .banner {
-    padding: 20px;
-    background-color: #36454F;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    background-color: #1e3146; /* Background color of the banner */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding around content */
+    text-align: center; /* Center align text */
+  }
+  
+  .banner h1 {
+    margin: 0; /* Remove margin for the heading */
+    font-size: 24px; /* Set font size for the name */
+  }
+  
+  .banner p {
+    margin: 0; /* Remove margin for the paragraph */
+    font-size: 16px; /* Set font size for the copyright message */
+  }
+  
+  #year {
+    font-weight: bold; /* Make the year bold */
+  }
+
+  #splashContent {
+    width: 30%;
+    height: 200px;
+    border: 5px dashed #f7a239;
+    padding: 10px;
+    margin: 10px;
+
+  
 }
-
-.banner h2 {
-    font-size: 18px;
-}
-
-/* Styles for each banner item */
-#name, #date, #cnum {
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #6C7A89;
-}
-
-#name {
-    margin-right: 10px; /* Provide some spacing between items */
-}
-
-
 
 #imageUnsplash {
-    position:static;
-    top: 0;
-    left: 0;
-    width: 500px;
-    height: 250px;
+    /* position:static; */
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     background-size: contain; /* Cover the entire container */
     background-position: center;
+    padding: 10px;
+    margin: 10px;
+
 }
 
+#imageUnsplash img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+  
+  
+}
 
+.splashContent{
+    text-align: center;
+}
+
+.splashContent{
+    text-align: center;
+}
+#inputContent{
+    margin-bottom: 25px;
+}
 
 .main-container{
     width: fit-content;
@@ -226,4 +250,27 @@ body{
     border-color: #007bff; /* Change border color on focus */
   }
   
-  
+#inputContent{
+    background-color: #ebfffc;
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+#button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+  }
