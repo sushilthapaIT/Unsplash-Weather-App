@@ -1,34 +1,44 @@
+/* 
+   Author: Sushil Thapa
+   Student ID: C0919991
+   Date: 2024/04/10
+   Description: CSS File 
+*/
+
+/* Reset CSS */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+
+/* Body Styles */
 body{
+    font-family: 'Times New Roman', Times, serif;
     background: linear-gradient(#ffffff, #020024);
 }
 
-/* css for banner */
 /* Banner styles */
 .banner {
-    background-color: #1e3146; /* Background color of the banner */
-    color: #fff; /* Text color */
-    padding: 20px; /* Padding around content */
-    text-align: center; /* Center align text */
+    background-color: #1e3146;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
   }
   
   .banner h1 {
-    margin: 0; /* Remove margin for the heading */
-    font-size: 24px; /* Set font size for the name */
+    margin: 0;
+    font-size: 24px;
   }
   
   .banner p {
-    margin: 0; /* Remove margin for the paragraph */
-    font-size: 16px; /* Set font size for the copyright message */
+    margin: 0;
+    font-size: 16px;
   }
   
   #year {
-    font-weight: bold; /* Make the year bold */
+    font-weight: bold;
   }
 
   #splashContent {
@@ -41,17 +51,15 @@ body{
   
 }
 
+
+/* Image Position */
 #imageUnsplash {
-    /* position:static; */
-    /* top: 0; */
-    /* left: 0; */
-    width: 100%;
-    height: 100%;
+    position:static;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 450px;
     object-fit: cover;
-    background-size: contain; /* Cover the entire container */
-    background-position: center;
-    padding: 10px;
-    margin: 10px;
 
 }
 
@@ -75,6 +83,8 @@ body{
     margin-bottom: 25px;
 }
 
+
+/* Weather Css and Styles */
 .main-container{
     width: fit-content;
     background: #36454F;
@@ -105,7 +115,7 @@ body{
     padding: 10px 25px;
     flex: 1;
     margin-right: 16px;
-    font-size: 18px;
+    font-size: 9px;
 }
 
 .search button{
@@ -113,8 +123,8 @@ body{
     outline: 0;
     background: #ebfffc;
     border-radius: 50%;
-    width: 90px;
-    height: 50px;
+    width: 45px;
+    height: 25px;
     cursor: pointer;
 }
 
@@ -123,16 +133,16 @@ body{
 }
 
 .weather-icon{
-    width: 170px;
+    width: 77px;
 }
 
 .weather h1{
-    font-size: 80px;
+    font-size: 34px;
     font-weight: 500;
 }
 
 .weather h2{
-    font-size: 45px;
+    font-size: 21px;
     font-weight: 400;
     margin-top: -10px;
 }
@@ -142,7 +152,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 25px;
 }
 
@@ -165,15 +175,14 @@ body{
 }
 
 .humidity, .wind{
-    font-size: 28px;
-    margin-top: -6px;
+    font-size: 12px;
 }
 
 .weather{
     display: none;
 }
 
-/* CSS to display error message */
+/* Error message styles */
 .error{
    text-align: center;
    margin-left: 10px; 
@@ -186,7 +195,7 @@ body{
 
 
 .temperature{
-    margin-top: 20px;
+    margin-top: 8px;
 }
 
 
@@ -196,58 +205,59 @@ body{
     border: none;
     padding: 4px;
     background-color: hsla(172, 49%, 63%, 0.842);
-    font-size: 25px;
+    font-size: 12px;
     font-weight: bolder;
 }
 
 #icon{
-    font-size: 25px;
+    font-size: 12px;
     margin-right: 5px;
 }
 
-
+/* Main grid styles */
 .main{
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Each child will take up an equal fraction of the available space */
-    gap: 10px;
+    grid-template-columns: 0.5fr 1fr; 
+    gap: 5px;
+    padding: 0 5% 0 5%;
 }
 
-
+/* Date and Time styles */
 .item {
-    border: 1px solid black; /* Just for visualization */
-    padding: 10px; /* Add padding or adjust as needed */
+    border: 1px solid black; 
+    padding: 10px; 
 }
 
 .time {
     border: 25px;
     align-items: center;
     text-align: center;
-    font-size: 25px;
-    color: #ebfffc;
+    font-size: 12px;
+    color: #1e3146;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
 }
-
 
 
 /* inputfield unsplash */
 #inputContent {
-    width: 50%; /* Set the width to 100% to make it responsive */
-    padding: 5px; /* Add padding for better visual appeal */
-    border: 1px solid #ccc; /* Add a border */
-    border-radius: 5px; /* Add border-radius for rounded corners */
-    font-size: 16px; /* Set font size */
-    box-sizing: border-box; /* Include padding and border in the width */
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
   }
   
   /* Style placeholder text */
   #inputContent::placeholder {
-    color: #999; /* Set placeholder color */
+    color: #999;
   }
   
   /* Style on focus */
   #inputContent:focus {
-    outline: none; /* Remove default focus outline */
-    border-color: #007bff; /* Change border color on focus */
+    outline: none;
+    border-color: #007bff;
   }
   
 #inputContent{
@@ -258,6 +268,7 @@ body{
     font-size: 18px;
 }
 
+/* Button styles */
 #button{
     border: 0;
     outline: 0;
@@ -268,6 +279,7 @@ body{
     cursor: pointer;
 }
 
+/* Responsive styles */
 @media (max-width: 600px) {
     .main{
         display: flex;
